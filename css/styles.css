@@ -108,12 +108,42 @@ body {
 .card {
     height: 400px;
     padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+.rotation-plane {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 5px 6px 0 rgba(0,0,0,0.2);
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    border-radius: 4px;
+}
+
+.rotation-plane.flip {
+    transform: rotateY(180deg);
 }
 
 .frontside, 
 .backside  {
     position: absolute;
     height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.frontside.hideMe {
+    visibility: hidden;
+}
+
+.backside {
+    /* background-color: orange; */
+    transform: rotateY(180deg);
 }
 
 .card-body {
@@ -185,8 +215,6 @@ body {
     background-position: center;
 }
 
-.user-hypothesis .backside {
-}
 
 /* problem statement zone */
 .title-roll {
@@ -227,7 +255,7 @@ body {
     margin: 0 auto;
     color: white;
     font-weight: 700;
-    animation: scrolltext 77s linear 3s;
+    animation: scrolltext 77s linear 2s;
     margin-top: 20%;
 }
 
@@ -236,7 +264,7 @@ body {
         margin-top: 20%; 
     }
     to {
-        margin-top: -390%;
+        margin-top: -190%;
     }
 }
 
