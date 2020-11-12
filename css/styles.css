@@ -394,3 +394,13 @@ ol.carousel-indicators {
     background-color: #84a080;
     border-radius: 2px;
 }
+
+/* wireframe zone */
+.wireframes {
+    position: relative;
+}
+
+.wireframes .sub-section-info {
+    position: absolute;
+    top: 80px;
+}
