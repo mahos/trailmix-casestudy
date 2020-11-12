@@ -56,6 +56,10 @@ body {
     font-size: 2.0rem;
 }
 
+h5.sub-title {
+    margin-bottom: 24px;
+}
+
 .header h3.section-title {
     color: white;
 }
@@ -68,6 +72,7 @@ body {
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
+    margin: 60px 0;
 }
 
 .user-research-head {
@@ -151,6 +156,10 @@ body {
     display: grid;
     align-items: center;
     justify-items: center;
+}
+
+.card-body .sub-title {
+    margin-bottom: 0;
 }
 
 .frontside .card-body {
@@ -368,4 +377,20 @@ ol.carousel-indicators {
     /* position: relative; */
     /* display: flex;
     justify-content: center; */
+}
+
+/* useflow area */
+.userflow-tabs img {
+    width: 100%;
+}
+
+.user-flow .nav-pills .nav-link {
+    padding: 3px 22px;
+}
+.user-flow .nav-pills * {
+    color: rgb(43, 43, 43);
+}
+.user-flow .nav-pills .nav-item .nav-link.active {
+    background-color: #84a080;
+    border-radius: 2px;
 }
