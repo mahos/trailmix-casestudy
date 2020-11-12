@@ -393,7 +393,7 @@
                     testing among ourselves and friends to understand and consolidate our designs.
                 </p>
             </div>
-            <img class="col-lg-8 offset-lg-2" src="./images/wireframes.png">
+            <img class="col-lg-9 offset-lg-2" src="./images/wireframes.png">
         </div>
     </div>
 
@@ -402,8 +402,8 @@
     </div>
     <div class="container prototyping-content">
         <div class="row testing">
-            <img class="col-lg-4 offset-lg-1" src="./images/testing image.png">
-            <div class="col-lg-4 offset-lg-2 sub-section-info">
+            <img class="col-lg-5 offset-lg-1" src="./images/testing image.png">
+            <div class="col-lg-4 offset-lg-1 sub-section-info">
                 <h5 class="sub-title">Testing</h5>
                 <p>Our team recruited testers online, and conducted user testing with inVision’s prototype sharing and various online meeting tools. 
                     <br>The most popular response we observed was the users having trouble finding the “Add Pin” button when prompted to add something to the map. 
@@ -425,31 +425,89 @@
                     </ol>
                 </p>
             </div>
-            <img src="" class="col-lg-4 offset-lg-2">
+            <div id="designIterations" class="col-lg-5 offset-lg-1 carousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#iterationA" data-slide-to="0" class="active"></li>
+                  <li data-target="#iterationB1" data-slide-to="1"></li>
+                  <li data-target="#iterationB2" data-slide-to="2"></li>
+                  <li data-target="#iterationB3" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="board-container d-block">
+                            <div class="iteration-captions">
+                                <span>Before</span>
+                                <span>After</span>
+                            </div>
+                            <img src="./images/iteration - menu position.png" class="board" id="board1">
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="board-container d-block">
+                            <div class="iteration-captions">
+                                <span>Before</span>
+                                <span>After</span>
+                            </div>
+                            <img src="./images/iteration - pin categories 01.png" class="board" id="board2">
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="board-container d-block">
+                            <div class="iteration-captions">
+                                <span>Before</span>
+                                <span>After</span>
+                            </div>
+                            <img src="./images/iteration - pin categories 02.png" class="board" id="board3">
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="board-container d-block">
+                            <div class="iteration-captions">
+                                <span>Before</span>
+                                <span>After</span>
+                            </div>
+                            <img src="./images/iteration - pin categories 03.png" class="board" id="board4">
+                  
+                        </div>
+                    </div>
+                  
+                </div>
+                <a class="carousel-control-prev" href="#designIterations" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#designIterations" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
         <div class="row final-prototype">
             <div class="prototype-demo-viewer col-lg-5 offset-lg-1">
                 <div class="tab-content userflow-tabs" id="userflow-pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-proto-demo1" role="tabpanel" aria-labelledby="pills-proto-demo1-tab">
-                        <img src="">
+                        <img src="./images/add animal pin.gif">
                     </div>
                     <div class="tab-pane fade" id="pills-proto-demo2" role="tabpanel" aria-labelledby="pills-proto-demo2-tab">
-                        <img src="">
+                        <img src="./images/view map.gif">
                     </div>
                     <div class="tab-pane fade" id="pills-proto-demo3" role="tabpanel" aria-labelledby="pills-proto-demo3-tab">
-                        <img src="">
+                        <img src="./images/filter.gif">
                     </div>
                     <div class="tab-pane fade" id="pills-proto-demo4" role="tabpanel" aria-labelledby="pills-proto-demo4-tab">
-                        <img src="">
+                        <img src="./images/find friend.gif">
                     </div>
                     <div class="tab-pane fade" id="pills-proto-demo5" role="tabpanel" aria-labelledby="pills-proto-demo5-tab">
-                        <img src="">
+                        <img src="./images/login.gif">
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 offset-lg-1 sub-section-info">
                 <h5 class="sub-title">Final Prototype Demo</h5>
-                <p>Here are the demo walkthroughs of our final TrailMix app LiveMap prototype.</p>
+                <p>Here are the demo walkthroughs of our final TrailMix app Live Map prototype.</p>
                 <ul class="nav nav-pills mb-3" id="proto-demo-pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <a class="nav-link active" id="pills-proto-demo1-tab" data-toggle="pill" href="#pills-proto-demo1" role="tab" aria-controls="pills-proto-demo1" aria-selected="true">Add Pin</a>
@@ -467,9 +525,9 @@
                         <a class="nav-link" id="pills-proto-demo5-tab" data-toggle="pill" href="#pills-proto-demo5" role="tab" aria-controls="pills-proto-demo5" aria-selected="false">Log In/Out</a>
                     </li>
                 </ul>
-                <p>Or. you can play around for yourself</p>
+                <p>Or, you can play around for yourself</p>
                 <!-- <iframe width="442" height="935" src="//invis.io/JFZEXZ3WUSH" frameborder="0" allowfullscreen></iframe> -->
-                <button class="btn-md btn-success">Open Prototype</button>
+                <button class="btn-md btn-outline" id="openPrototype">Open Prototype</button>
             </div>
         </div>
     </div>

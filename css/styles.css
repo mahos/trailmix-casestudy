@@ -387,12 +387,15 @@ ol.carousel-indicators {
 .user-flow .nav-pills .nav-link {
     padding: 3px 22px;
 }
-.user-flow .nav-pills * {
-    color: rgb(43, 43, 43);
+.nav-pills * {
+    color: #84a080;
 }
-.user-flow .nav-pills .nav-item .nav-link.active {
+.nav-pills .nav-item .nav-link.active {
     background-color: #84a080;
     border-radius: 2px;
+}
+.nav-pills .nav-item .nav-link:hover{
+    color: #556653;
 }
 
 /* wireframe zone */
@@ -403,4 +406,34 @@ ol.carousel-indicators {
 .wireframes .sub-section-info {
     position: absolute;
     top: 80px;
+}
+
+/* iteration sliders */
+.iteration-captions {
+    color: white;
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 10px;
+}
+
+/* final prototype zone */
+.final-prototype .nav-pills .nav-link {
+    padding: 5px 18px;
+    width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 8px auto;
+}
+
+#openPrototype {
+    border-color: #84a080;
+    color: #84a080;
+    border-radius: 4px;
+    padding: 5px 18px;
+}
+
+.prototype-demo-viewer img{
+    width: 75%;
 }

@@ -3,6 +3,9 @@ $(document).ready(function() {
     $('#trailmixStoryBoard').carousel({
         interval: 0
     });
+    $('#designIterations').carousel({
+        interval: 0
+    });
 })
 
 $('.card').click(function() {
