@@ -22,7 +22,7 @@ body {
     background-image: url('../images/mountain_camp.jpg');
     background-size: cover;
     background-position: bottom;
-    height: 105vh;
+    height: 100vh;
     border-radius: 0;
     
 }
@@ -55,6 +55,9 @@ body {
     text-align: center;
     font-size: 2.0rem;
 }
+.summary-area .section-title {
+    margin-top: 60px;
+}
 
 h5.sub-title {
     margin-bottom: 24px;
@@ -74,6 +77,7 @@ h5.sub-title {
     background-attachment: fixed;
     margin: 60px 0;
 }
+
 
 .user-research-head {
     background-image: url('../images/from_tent_view.jpg');
@@ -305,7 +309,7 @@ h5.sub-title {
 
 
 
-.prioritization-result .overlay{
+.prioritization-result .overlay {
     position: absolute;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
@@ -320,6 +324,7 @@ h5.sub-title {
     color: white;
     font-size: 24px;
     font-family: 'Roboto Slab', serif;
+    margin: auto;
 }
 
 .taggables-tile {
@@ -413,11 +418,13 @@ ol.carousel-indicators {
 /* wireframe zone */
 .wireframes {
     position: relative;
+    z-index: 0;
 }
 
 .wireframes .sub-section-info {
     position: absolute;
     top: 80px;
+    z-index: 10;
 }
 
 /* iteration sliders */
@@ -439,11 +446,16 @@ ol.carousel-indicators {
     margin: 8px auto;
 }
 
-#openPrototype {
+#openPrototype,
+#openPrototypeMobile button{
     border-color: #84a080;
     color: #84a080;
     border-radius: 4px;
     padding: 5px 18px;
+}
+
+#openPrototypeMobile {
+    display: none;
 }
 
 .prototype-demo-viewer img{
@@ -506,4 +518,173 @@ ol.carousel-indicators {
     text-align: center;
     font-size: 0.7rem;
     margin-bottom: 0;
+}
+
+
+
+/* =================================== */
+/* ===== screen size adjustments ===== */
+/* =================================== */
+/* Tiny devices (landscape phones, 556px and under) */
+@media (max-width: 575px) {
+    body {
+        font-size: 13px;
+    }
+    .hero-area {
+        height: 50vh;
+    }
+    .hero-area .container {
+        transform: translateY(-40%);
+    }
+    #top-title {
+        font-size: 3.3em;
+    }
+    #sub-top-title {
+        font-size: 1rem;
+        margin-left: 3px;
+        line-height: 1.55;
+    }
+    #sub-top-title br {
+        display: none;
+    }
+    .summary-area .section-title {
+        margin-top: 30px;
+        font-size: 1.6rem;
+    }
+    .header {
+        height: 180px;
+        margin: 20px 0;
+    }
+
+    .sub-section-info {
+        margin-top: 20px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .prioritization-result {
+        margin: 0;
+        padding: 0;
+    }
+
+    .taggables-tile {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .tile-img-bkg {
+        height: 100%;
+        object-fit: cover;
+        /* width: 100%; */
+    }
+
+    .taggables-tile .overlay p {
+        font-size: 1.0em;
+        margin: auto;
+    }
+
+    .storyboard img.board,
+    .board-caption {
+        width: 80%;
+    }
+    .wireframes .sub-section-info {
+        position: relative;
+        top: 0px;
+    }
+
+    .iterations .ba-board {
+        width: 80%;
+    }
+
+    #openPrototype {
+        display: none;
+    }
+
+    #openPrototypeMobile {
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    
+}
+/* Small devices (landscape phones, 576px - 767px) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        font-size: 13px;
+    }
+    .hero-area {
+        height: 70vh;
+    }
+    .hero-area .container {
+        transform: translateY(-30%);
+    }
+    #top-title {
+        font-size: 3.8rem;
+    }
+    #sub-top-title {
+        font-size: 1.3rem;
+        margin-left: 3px;
+        line-height: 1.55;
+    }
+
+    .summary-area .section-title {
+        margin-top: 40px;
+        font-size: 1.8rem;
+    }
+
+    .header {
+        height: 320px;
+        margin: 20px 0;
+    }
+    
+    .prioritization-result {
+        margin: 10px 0 0 0;
+        padding: 0;
+    }
+
+    .taggables-tile {
+        height: 170px;
+    }
+
+    .tile-img-bkg {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .taggables-tile .overlay p {
+        font-size: 1.2em;
+    }
+    .wireframes .sub-section-info {
+        /* position: relative; */
+        top: 0px;
+    }
+
+    .conclusion .row {
+        align-items: flex-start;
+    }
+    
+
+}
+
+/* Medium devices (tablets, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header {
+        height: 400px;
+        margin: 40px 0;
+    }
+    .taggables-tile .overlay p {
+        font-size: 1.4em;
+    }
+    .conclusion .row {
+        align-items: flex-start;
+    }
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
