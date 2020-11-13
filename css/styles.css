@@ -575,14 +575,13 @@ ol.carousel-indicators {
     .header {
         height: 180px;
         margin: 20px 0;
-    }
-    .user-research-head {
-        background-position: bottom;
         background-attachment: scroll;
+    }
+    .testing-head {
+        background-position: center;
     }
     .ideation-head {
         background-position: center;
-        background-attachment: scroll;
     }
 
 
@@ -634,8 +633,10 @@ ol.carousel-indicators {
 
     #openPrototypeMobile {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 30px;
         width: fit-content;
+        background-color: white;
+
     }
     .title-roll .text-board {
         font-weight: 2.2em;
@@ -673,11 +674,11 @@ ol.carousel-indicators {
     .header {
         height: 320px;
         margin: 20px 0;
+        background-attachment: scroll;
     }
     
-    .user-research-head {
-        background-position: bottom;
-        background-attachment: scroll;
+    .testing-head {
+        background-position: center;
     }
 
     .prioritization-result {
