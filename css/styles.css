@@ -356,13 +356,15 @@ h5.sub-title {
 }
 
 img.board {
-    width: 300px;
+    max-width: 300px;
+    width: 75%;
 }
 .board-caption {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    max-width: 300px;
+    width: 75%;
     height: 120px;
     background-color: white;
     color: rgb(78, 78, 78);
@@ -555,6 +557,15 @@ ol.carousel-indicators {
         height: 180px;
         margin: 20px 0;
     }
+    .user-research-head {
+        background-position: bottom;
+        background-attachment: scroll;
+    }
+    .ideation-head {
+        background-position: center;
+        background-attachment: scroll;
+    }
+
 
     .sub-section-info {
         margin-top: 20px;
@@ -640,6 +651,11 @@ ol.carousel-indicators {
         margin: 20px 0;
     }
     
+    .user-research-head {
+        background-position: bottom;
+        background-attachment: scroll;
+    }
+
     .prioritization-result {
         margin: 10px 0 0 0;
         padding: 0;
