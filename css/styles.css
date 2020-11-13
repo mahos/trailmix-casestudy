@@ -17,6 +17,22 @@ body {
     padding: 0;
     font-size: 14px;
 }
+#csModal .modal-dialog {
+    margin: 20px;
+    width: 100%;
+}
+#csModal .modal-dialog .modal-content {
+    width: 95vw;
+    height: fit-content;
+}
+.modal-content .modal-body {
+    display: flex;
+    justify-content: center;
+}
+
+.clickable {
+    cursor: pointer;
+}
 
 .hero-area {
     background-image: url('../images/mountain_camp.jpg');
@@ -254,7 +270,7 @@ h5.sub-title {
     transform: perspective(260px) rotateX(40deg);
     transform-origin: 50% 100%;
     bottom: 0;
-    font-size: 2.1rem;
+    font-size: 2.1em;
     text-align: justify;
     height: 24rem;
 }
@@ -272,7 +288,7 @@ h5.sub-title {
     margin: 0 auto;
     color: white;
     font-weight: 700;
-    animation: scrolltext 77s linear 2s;
+    animation: scrolltext 77s linear 2s infinite;
     margin-top: 20%;
 }
 
@@ -532,6 +548,9 @@ ol.carousel-indicators {
     body {
         font-size: 13px;
     }
+    #csModal {
+        display: none;
+    }
     .hero-area {
         height: 50vh;
     }
@@ -618,6 +637,10 @@ ol.carousel-indicators {
         margin: 0 auto;
         width: fit-content;
     }
+    .title-roll .text-board {
+        font-weight: 2.2em;
+        height: 18rem;
+    }
     
 }
 /* Small devices (landscape phones, 576px - 767px) */
@@ -626,6 +649,7 @@ ol.carousel-indicators {
     body {
         font-size: 13px;
     }
+    
     .hero-area {
         height: 70vh;
     }
@@ -681,6 +705,11 @@ ol.carousel-indicators {
     .conclusion .row {
         align-items: flex-start;
     }
+
+    .title-roll .text-board {
+        font-size: 1.5em;
+        height: 12rem;
+    }
     
 
 }
@@ -696,6 +725,11 @@ ol.carousel-indicators {
     }
     .conclusion .row {
         align-items: flex-start;
+    }
+
+    .title-roll .text-board {
+        font-size: 1.8em;
+        height: 18rem;
     }
 
 }
