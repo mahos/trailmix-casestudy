@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 
 
-$(".nav-link, .navbar-brand").click(function() {
+$("nav .nav-link, nav .navbar-brand").click(function() {
     console.log('navlink clicked')
     var sectionTo = $(this).attr('href');
     $('html, body').animate({
