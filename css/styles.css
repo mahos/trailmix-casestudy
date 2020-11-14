@@ -387,6 +387,7 @@ h5.sub-title {
     border: 1px solid rgba(255, 255, 255, 0.2);
     justify-content: center;
     display: flex;
+    cursor: ew-resize;
 }
 
 .taggables-tile {
