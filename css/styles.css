@@ -648,7 +648,7 @@ ol.carousel-indicators {
 
     .taggables-tile {
         height: 150px;
-        overflow: hidden;
+        overflow: initial;
     }
 
     .tile-img-bkg {
@@ -664,6 +664,11 @@ ol.carousel-indicators {
         padding-right: 0;
         /* color: green; */
         overflow: hidden;
+    }
+
+    .slider-handle {
+        width: 30px;
+        height: 30px;
     }
 
     /* same breakpoint as large screen */
@@ -738,8 +743,10 @@ ol.carousel-indicators {
         margin: 20px 0;
         background-attachment: scroll;
     }
-    
     .testing-head {
+        background-position: center;
+    }
+    .ideation-head {
         background-position: center;
     }
 
@@ -750,11 +757,16 @@ ol.carousel-indicators {
 
     .taggables-tile {
         height: 170px;
+        overflow: initial;
     }
 
     .tile-img-bkg {
         height: 100%;
         object-fit: cover;
+    }
+
+    .slider-handle {
+        width: 30px;
     }
 
     .taggables-tile .overlay p {
@@ -792,9 +804,20 @@ ol.carousel-indicators {
     .header {
         height: 400px;
         margin: 40px 0;
+        background-attachment: scroll;
+    }
+    .testing-head {
+        background-position: center;
+    }
+    .ideation-head {
+        background-position: center;
     }
     .taggables-tile .overlay p {
         font-size: 1.4em;
+    }
+
+    .slider-handle {
+        width: 30px;
     }
     .conclusion .row {
         align-items: flex-start;
