@@ -317,6 +317,8 @@ h5.sub-title {
     font-size: 1.4rem;
 }
 
+
+
 /* prioritiation area */
 
 .prioritization-result {
@@ -330,9 +332,10 @@ h5.sub-title {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     height: 100%;;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    overflow: hidden;
 }
 
 .prioritization-result .overlay p {
@@ -340,11 +343,33 @@ h5.sub-title {
     color: white;
     font-size: 24px;
     font-family: 'Roboto Slab', serif;
-    margin: auto;
+    position: absolute;
+    right: 80px;
+    top: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.taggables-tile .overlay p br.lg,
+.taggables-tile .overlay p br.xs {
+    display: none;
+}
+
+.slider-handle {
+    position: absolute;
+    z-index: 15;
+    width: 24px;
+    height: 30px;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    justify-content: center;
+    display: flex;
 }
 
 .taggables-tile {
     position: relative;
+    overflow: hidden;
 }
 
 .taggables-tile img.tile-img-bkg {
@@ -611,8 +636,22 @@ ol.carousel-indicators {
 
     .taggables-tile .overlay p {
         font-size: 1.0em;
-        margin: auto;
+        top: 25%;
+        right:50px;
+        padding-right: 0;
+        /* color: green; */
+        overflow: hidden;
     }
+
+    /* same breakpoint as large screen */
+    .taggables-tile .overlay p br.md,
+    .taggables-tile .overlay p br.lg {
+        display: none; 
+    }
+    .taggables-tile .overlay p br.xs {
+        display: block; 
+    }
+
 
     .storyboard img.board,
     .board-caption {
@@ -697,7 +736,16 @@ ol.carousel-indicators {
 
     .taggables-tile .overlay p {
         font-size: 1.2em;
+        top: 22%;
+        right: 50px;
+        /* color: pink; */
     }
+
+    .taggables-tile .overlay p br.lg,
+    .taggables-tile .overlay p br.xs {
+        display: none;
+    }
+
     .wireframes .sub-section-info {
         /* position: relative; */
         top: 0px;
@@ -711,6 +759,7 @@ ol.carousel-indicators {
         font-size: 1.5em;
         height: 12rem;
     }
+    
     
 
 }
@@ -733,9 +782,32 @@ ol.carousel-indicators {
         height: 18rem;
     }
 
+    .prioritization-result .overlay p {
+        top: 20%;
+        right: 55px;
+        /* color: red; */
+    }
+
+    .taggables-tile .overlay br.lg,
+    .taggables-tile .overlay br.xs {
+        display: none;
+    }
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .prioritization-result .overlay p {
+        top: 22%;
+        /* color: purple; */
+    }
+
+    .taggables-tile .overlay p br.lg {
+        display: block;
+    }
+    .taggables-tile .overlay p br.md,
+    .taggables-tile .overlay p br.xs {
+        display: none;
+    }
 
 }
