@@ -10,6 +10,15 @@ $(document).ready(function() {
     activateSlider();
 });
 
+
+$(".nav-link, .navbar-brand").click(function() {
+    console.log('navlink clicked')
+    var sectionTo = $(this).attr('href');
+    $('html, body').animate({
+      scrollTop: $(sectionTo).offset().top - 55
+    }, 1100);
+});
+
 $('.card').click(function() {
     $(this).find('.rotation-plane').toggleClass('flip')
 
